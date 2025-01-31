@@ -27,7 +27,8 @@ Ollama(){
     sleep 3 &&
     echo -e "Installing DeepSeek 1.5b.\n" &&
     ollama pull deepseek-r1:1.5b &&
-    echo -e "DeepSeek installed.\n"
+    echo -e "DeepSeek installed.\n" &&
+    sudo systemctl stop ollama.service
 }
 
 Copy(){
