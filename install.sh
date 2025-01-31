@@ -24,6 +24,7 @@ Ollama(){
         sudo systemctl disable ollama.service
     fi
     echo -e "Ollama installed.\n" &&
+    sudo systemctl start ollama.service &&
     echo -e "Installing DeepSeek 1.5b.\n" &&
     ollama pull deepseek-r1:1.5b &&
     echo -e "DeepSeek installed.\n"
