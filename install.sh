@@ -19,8 +19,7 @@ Ollama(){
     then
         echo -e "Installing Ollama...\n" &&
         curl -fsSL https://ollama.com/install.sh | sh &&
-        echo -e "Ollama installed.\n" &&
-        echo -e "Getting deepseek model...\n" &&
+        sleep 1 &&
         sudo systemctl disable ollama.service
     fi
     echo -e "Ollama installed.\n" &&
