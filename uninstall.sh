@@ -12,6 +12,11 @@ sudo rm -r /usr/share/ollama &&
 sudo userdel ollama &&
 sudo groupdel ollama
 
-### CLEAN DOCKER
+### DELETE DOCKER
 sudo docker container rm open-webui;
 sudo docker image rm open-webui;
+
+
+### DELETE SCRIPT
+sudo rm /usr/bin/deepseek-start &&
+sudo rm /usr/bin/deepseek-stop
