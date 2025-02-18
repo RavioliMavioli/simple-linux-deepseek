@@ -10,7 +10,9 @@ Docker(){
     fi
 
     # Pull webui
-    sudo docker pull ghcr.io/open-webui/open-webui:main
+    sudo docker pull ghcr.io/open-webui/open-webui:main &&
+    # Add webui persistent volume
+    sudo docker volume create open-webui
 }
 
 Ollama(){
